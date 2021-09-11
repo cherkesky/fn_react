@@ -5,6 +5,7 @@ import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import { fetchAPI } from "./modules/APIManager";
 
 function App() {
   const [tasks, setTasks] = useState([])
@@ -97,7 +98,7 @@ function App() {
             }
           </>
         )}/>
-        
+
         <Route path='/about' component={About} />
         <Footer />
 
